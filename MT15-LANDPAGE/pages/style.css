@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-box: none;
+}
+
+.h1__first{
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(164,252,249,1) 0%, rgba(16,24,21,1) 49%, rgba(69,252,173,1) 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.fs__900--white{
+    
+    font-size: 1.400rem;
+    color: white;
+}
+
+/*Layout of page*/
+#page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "head head"
+        "main  main"
+        "foot  foot";
+    grid-template-rows: 10vh 150vh 10vh;
+    grid-template-columns: 200px 1fr;
+    background: #060d15;
+    overflow: hidden;
+}
+
+#page>header {
+    grid-area: head;
+  
+    height: 10vh;
+}
+
+
+
+#page>main {
+    grid-area: main;
+   
+   
+}
+
+#page>footer {
+    grid-area: foot;
+    background-color: #181818;
+}
+
+#page>footer>p {
+    margin-top: 20px;
+}
+
+.txt_nav>ul {
+    
+    
+    padding: 2%;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.item1 {
+    color: white;
+    margin: 0 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+main>.content{
+    
+  
+
+
+    display:flex;
+    
+    width: 100%;
+    height: 90vh;
+
+
+    margin: 0 auto;
+
+    
+
+    background-color: #8c9fff00;
+}
+
+
+.window{
+    max-width: 1200px;
+    display: flex;
+    border: 1px solid black;
+    justify-content:center;
+    align-items: center;
+    
+    margin: 0 auto;
+    
+}
+
+.window__img{
+    max-width: 1200px;
+
+
+    object-fit: none;
+
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    filter: brightness(50%);
+    background-attachment: local;
+}
+
+.quote{
+   
+
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*custom bottom*/
+.btn{
+  width: 100%;
+  margin-top: 20px;  
+
+  display: flex;
+  justify-content: center;
+}
+
+.quote__button{
+   
+
+    margin: 10px;
+    
+
+}
+
+.animated-button{
+    background-color: rgb(233, 36, 36);
+    color: white;
+
+    border: none;
+    
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.973);
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+    justify-self: center;
+    margin-right: 5%;
+}
+
+.animated-button:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.p__btn{
+    color: white;
+    font-size: 1.600rem;
+    margin: 0 auto;
+    
+}
